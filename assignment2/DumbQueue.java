@@ -15,13 +15,11 @@ public class DumbQueue {
         int[] myArray = {};
         MyStack newS = new MyStack(myArray);
         while(s.arrayStack.length > 1){
-            newS.push(s.getTop());
-            s.pop();
+            newS.push(s.pop());
         }
         s.pop();
         while(newS.arrayStack.length > 0){
-            s.push(newS.getTop());
-            newS.pop();
+            s.push(newS.pop());
         }
     }
 
