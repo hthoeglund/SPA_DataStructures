@@ -17,7 +17,7 @@ public class MyStack {
     }
 
     public void pop(){
-        //O(n-1) because we need to set ever n-1 value of newArray individually
+        //O(n-1) because we need to set every n-1 value of newArray individually
         int sizeA = arrayStack.length;
         int[] newArray = new int[sizeA - 1];
         for(int i = 0; i < newArray.length; i++){
