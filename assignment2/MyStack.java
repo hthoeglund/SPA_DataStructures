@@ -16,20 +16,20 @@ public class MyStack {
         arrayStack = newArray;
     }
 
-    public void pop(){
+    public int pop(){
         //O(n-1) because we need to set every n-1 value of newArray individually
         int sizeA = arrayStack.length;
+        int pop = arrayStack[arrayStack.length-1];
         int[] newArray = new int[sizeA - 1];
         for(int i = 0; i < newArray.length; i++){
             newArray[i] = arrayStack[i];
         }
 
         arrayStack = newArray;
-    }
 
-    public int getTop(){
-        return arrayStack[arrayStack.length-1];
+        return pop;
     }
+    
     public void printList(){
         System.out.print("(");
         for(int i = 0; i < arrayStack.length; i++){
