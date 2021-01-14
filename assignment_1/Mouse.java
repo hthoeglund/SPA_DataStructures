@@ -12,8 +12,8 @@ public class Mouse {
         name = iName;
         xCoord = iXCoord;
         yCoord = iYCoord;
-        coords.add(4);
-        coords.add(2);
+        coords.add(xCoord);
+        coords.add(yCoord);
         coordinateHistoryStack.add(coords);
     }
     public String getName(){
