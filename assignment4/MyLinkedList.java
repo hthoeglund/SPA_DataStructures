@@ -33,13 +33,18 @@ public class MyLinkedList {
     }
 
     public void remove(int index){
-        Node currentNode = headNode;
-        //sets current node to index-1
-        for(int i = 0; i < index - 1; i++){
-            currentNode = currentNode.next;
+        if(index == 0){
+            headNode = headNode.next;
         }
-        //connects currentNode to currentNode.next.next
-        currentNode.next = currentNode.next.next;
+        else{
+            Node currentNode = headNode;
+            //sets current node to index-1
+            for(int i = 0; i < index - 1; i++){
+                currentNode = currentNode.next;
+            }
+            //connects currentNode to currentNode.next.next
+            currentNode.next = currentNode.next.next;
+        }  
     }
 
     public void insert(int k, int index){
