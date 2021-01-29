@@ -49,17 +49,23 @@ public class MyLinkedList {
 
     public void insert(int k, int index){
         Node node = new Node(k);
-        Node currentNode = headNode;
-        //sets current node to index-1
-        for(int i = 0; i < index - 1; i++){
-            currentNode = currentNode.next;
+        if(index == 0){
+            node.next = headNode;
+            headNode = node;
         }
-        //Creates a temporary node storing the current node at index
-        Node next = currentNode.next;
-        //inserts the new node
-        currentNode.next = node;
-        //reconnects the temporary node
-        node.next = next;
+        else{
+            Node currentNode = headNode;
+            //sets current node to index-1
+            for(int i = 0; i < index - 1; i++){
+                currentNode = currentNode.next;
+            }
+            //Creates a temporary node storing the current node at index
+            Node next = currentNode.next;
+            //inserts the new node
+            currentNode.next = node;
+            //reconnects the temporary node
+            node.next = next;
+        }
     }
 
     public void Switch(int index, int index2){
