@@ -5,6 +5,7 @@ public class Main{
         System.out.println(addN(4));
     }
 
+    //Adds n to every integer in an inputted string
     public static String addN(int n){
         Scanner console = new Scanner(System.in);
         System.out.print("What string would you like to use? ");
