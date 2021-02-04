@@ -1,32 +1,33 @@
-//CHALLENGE 1
-
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Collections;
+import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        Random rand = new Random();
-        for(int i = 0; i < 100; i++){
-            list.add(rand.nextInt(10));
-        }
+        System.out.println(addN(4));
+    }
+
+    public static String addN(int n){
+        Scanner console = new Scanner(System.in);
+        System.out.print("What string would you like to use? ");
+
+        String text = console.next();
+        console.close();
+
+        //converts the string into a char array
+        char[] newText = text.toCharArray();
+        text = "";
         
-        Collections.sort(list);
-        //LISTS ALL POSSIBLE PAIRS IN A RANDOMIZED ARRAY LIST THAT SUM TO 10
-        int i = 0;
-        int i2 = list.size() - 1;
-        while(i < i2){
-            if(list.get(i) + list.get(i2) == 10){
-                System.out.print("(" + list.get(i) + ", " + list.get(i2) + ")");
-                i++;
-            }
-            else if(list.get(i) + list.get(i2) < 10){
-                i++;
+        //checks if each character is an integer, adds n if it is, and then converts back to a string
+        for(int i = 0; i < newText.length; i++){
+            if(Character.isDigit(newText[i])){
+                int a = Character.getNumericValue(newText[i]) + n;
+                text = text + a;
             }
             else{
-                i2--;
+                text = text + newText[i];
             }
         }
+
+        return text;
     }
+
 }
