@@ -21,14 +21,9 @@ public class Main{
 
     //returns nth fibbonacci number
     public static int fib(int n){
-        if(n == 1){
-            return 1;
+        if(n <= 1){
+            return n;
         }
-        else if (n > 1){
             return fib(n-2) + fib(n-1);
-        }
-        else{
-            return 0;
-        }
     }
 }
