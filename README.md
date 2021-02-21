@@ -10,7 +10,7 @@ Spring 2021 Advanced Topics in Computer Science Turn-in repository.
 
 * **Assignment4:** Contains a LinkedList class that connects Node objects. The LinkedList contains add, remove, insert, switch, and reverse methods. There is also a method in the main file which merges two linked lists.
 
-* **Assignment5:** Contains a HashSet class that has add and isInSet methods. A private method called hash also creates new buckets within the add method when necessary.
+* **Assignment5:** Contains a HashSet class with an ArrayList<MyLinkedList> instance variable (using the LinkedList class from **Assignment4**). The class has add and isInSet methods. A private method called hash also creates new buckets within the add method when necessary.
 
 * **Assignment6:** Contains a Binary Search Tree class with an add method (a toString method was attempted, but was too intensive). A main method also contains three recursive methods: (1) palindrome, which returns true if string is a palindrome and false if it isn’t (2) factorial, which returns the factorial of an integer and (3) firstOc which returns the index of first occurence of a given integer in an array.
 
