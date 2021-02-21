@@ -11,7 +11,7 @@ public class Main{
         System.out.println(fib(7));
     }
 
-    //Create a a list with 10 numbers, loop through each item and print n + 4 (using recursion)
+    //Iterates through each item in a list and adds n (using recursion)
     public static void loop(ArrayList<Integer> list, int n, int index){
         if(index >= 0){
             list.set(index, list.get(index) + n);
@@ -19,7 +19,7 @@ public class Main{
         }
     }
 
-    //returns nth fibbonacci number
+    //returns nth fibonacci number
     public static int fib(int n){
         if(n <= 1){
             return n;
