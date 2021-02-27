@@ -12,7 +12,7 @@ Spring 2021 Advanced Topics in Computer Science Turn-in repository.
 
 * **Assignment5:** Contains a HashSet class with an ArrayList<MyLinkedList> instance variable (using the LinkedList class from **Assignment4**). The class has add and isInSet methods. A private method called hash also creates new buckets within the add method when necessary.
 
-* **Assignment6:** Contains a Binary Search Tree class with an add method (a toString method was attempted, but was too intensive). A main method also contains three recursive methods: (1) palindrome, which returns true if string is a palindrome and false if it isn’t (2) factorial, which returns the factorial of an integer and (3) firstOc which returns the index of first occurence of a given integer in an array.
+* **Assignment6:** Contains a Binary Search Tree class with add and print methods (newBST). It also contains a broken BST class (BST) kept for documentation purposes. A main method also contains three recursive methods: (1) palindrome, which returns true if string is a palindrome and false if it isn’t (2) factorial, which returns the factorial of an integer and (3) firstOc which returns the index of first occurence of a given integer in an array.
 
 * *Challenge1:* Contains a main file that lists all possible pairs in a randomized array list which sum to 10.
 * *Challenge2:* Contains an addN method in the main file that adds a given integer n to every integer within a string.
