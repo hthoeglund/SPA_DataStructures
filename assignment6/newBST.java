@@ -114,7 +114,7 @@ public class newBST {
                         currentNode = stack.pop();
                         stack.push(currentNode);
                     }
-                    //Once back at the headNode, checks if both sides of the tree have been explored and acts accordingly
+                    //Once back at the headNode, sets the currentNode to headNode.
                     else{
                         currentNode = headNode;  
                     }
@@ -123,10 +123,4 @@ public class newBST {
             return l;
         }
     }
-    //       / 
-    //    { }
-    //   /
-    // {0}
-    //   \
-    //    { }
 }
