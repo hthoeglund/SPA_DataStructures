@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.lang.Math;
 
 
-//In this file I tried to make the print function to complex, so I started over in newBST.
+//In this file I tried to make the print function t0o complex, so I started over in newBST.
 public class BST {
     private TreeNode headNode;
 
