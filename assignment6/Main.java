@@ -2,25 +2,30 @@ public class Main{
     public static void main(String[] args){
         //I did all three recursion problems because I wanted to and they were short
 
-        // RECURSION 1:
-        System.out.println(factorial(6));
+        // // RECURSION 1:
+        // System.out.println(factorial(6));
 
-        // RECURSION 2:
-        System.out.println(palindrome("Dog"));
-        System.out.println(palindrome("goog"));
-        System.out.println(palindrome("Doggod"));
-        System.out.println(palindrome("d"));
-        System.out.println(palindrome(""));
+        // // RECURSION 2:
+        // System.out.println(palindrome("Dog"));
+        // System.out.println(palindrome("goog"));
+        // System.out.println(palindrome("Doggod"));
+        // System.out.println(palindrome("d"));
+        // System.out.println(palindrome(""));
 
-        // RECURSION 3:
-        int[] a = {1, 2, 3, 4, 5};
-        System.out.println(firstOc(a, 4));
-        System.out.println(firstOc(a, 6));
+        // // RECURSION 3:
+        // int[] a = {1, 2, 3, 4, 5};
+        // System.out.println(firstOc(a, 4));
+        // System.out.println(firstOc(a, 6));
 
         TreeNode node = new TreeNode(5);
-        // BST tree = new BST(node);
-        // tree.add(6);
-        // System.out.println(tree);
+        newBST tree = new newBST(node);
+        tree.add(6);
+        tree.add(2);
+        tree.add(1);
+        tree.add(3);
+        tree.add(7);
+        tree.add(10);
+        tree.printBST();
     }
 
     //Returns true if the string is a palindrome. Compares first and last letters, then moves inward

@@ -3,6 +3,8 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.lang.Math;
 
+
+//In this file I tried to make the print function to complex, so I started over in newBST.
 public class BST {
     private TreeNode headNode;
 
@@ -151,7 +153,7 @@ public class BST {
             }
         }
     }
-    //returns the height of the tree
+    //returns the height of the tree (BROKEN)
     public int length(){
         Deque<TreeNode> stack = new ArrayDeque<TreeNode>();
         stack.push(headNode);

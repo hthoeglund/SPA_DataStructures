@@ -2,19 +2,13 @@ public class TreeNode {
     public int data;
     public TreeNode right;
     public TreeNode left;
+    public boolean visited;
 
     public TreeNode(int d){
         data = d;
         right = null;
         left = null;
-    }
-
-    public void setRight(TreeNode node){
-        right = node;
-    }
-
-    public void setLeft(TreeNode node){
-        left = node;
+        visited = false;
     }
 
     public String toString(){
