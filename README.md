@@ -14,6 +14,10 @@ Spring 2021 Advanced Topics in Computer Science Turn-in repository.
 
 * **Assignment6:** Contains a Binary Search Tree class with add and print methods (newBST). It also contains a broken BST class (BST) kept for documentation purposes. A main method also contains three recursive methods: (1) palindrome, which returns true if string is a palindrome and false if it isn’t (2) factorial, which returns the factorial of an integer and (3) firstOc which returns the index of first occurence of a given integer in an array.
 
+* **Assignment7:** Is this ReadMe file!
+
+* **Assignment8:** Contains a RandomSentence class that generates random sentences based on a HashMap<String, ArrayList<String>> which contains every word in Harry Potter: The Sorcerer's Stone and a list of all words that follow it.
+
 * *Challenge1:* Contains a main file that lists all possible pairs in a randomized array list which sum to 10.
 * *Challenge2:* Contains an addN method in the main file that adds a given integer n to every integer within a string.
 * *Challenge3:* Contains two recursive methods within the main file: (1) loop, which iterates through each item in a list and adds n and (2) fib, which returns the nth fibonacci number.
