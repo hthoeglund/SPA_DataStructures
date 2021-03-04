@@ -13,7 +13,8 @@ public class RandomSentence {
         ArrayList<String> text = uploadFile(filename);
         System.out.println(generateSentence(text));
     }
-    
+
+    //Uploads the text file into an ArrayList<String>
     public static ArrayList<String> uploadFile(String file) throws FileNotFoundException{
         String token1 = "";
 
@@ -29,6 +30,7 @@ public class RandomSentence {
 	    return list;
     }
 
+    //Creates the HashMap
     private static HashMap<String, ArrayList<String>> trainData(ArrayList<String> text){
         HashMap<String, ArrayList<String>> dict = new HashMap<String, ArrayList<String>>();
         
@@ -42,6 +44,7 @@ public class RandomSentence {
         return dict;
     }
 
+    //Generates the sentence
     public static String generateSentence(ArrayList<String> text){
         ArrayList<String> newText = removeErrors(text);
         HashMap<String, ArrayList<String>> list = trainData(newText);
