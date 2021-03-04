@@ -7,6 +7,12 @@ import java.util.HashMap;
 
 
 public class RandomSentence {
+	
+    public static void main(String[] args) throws FileNotFoundException{
+        String filename = args[0];
+        ArrayList<String> text = uploadFile(filename);
+        System.out.println(generateSentence(text));
+    }
     
     public static ArrayList<String> uploadFile(String file) throws FileNotFoundException{
         String token1 = "";
@@ -78,16 +84,5 @@ public class RandomSentence {
         }
 
         return noErrors;
-    }
-    public static void main(String[] args) throws FileNotFoundException{
-        String filename = args[0];
-        ArrayList<String> text = uploadFile(filename);
-        System.out.println(generateSentence(text));
-
-        //Upload file
-
-        //Train file
-        
-        //Generate sentence
     }
 }
