@@ -16,7 +16,7 @@ Spring 2021 Advanced Topics in Computer Science Turn-in repository.
 
 * **Assignment7:** Is this ReadMe file!
 
-* **Assignment8:** Contains a RandomSentence class that generates random sentences based on a HashMap<String, ArrayList<String>> which contains every word in Harry Potter: The Sorcerer's Stone and a list of all words that follow it.
+* **Assignment8:** Contains a RandomSentence class that generates random sentences based on a HashMap<String, ArrayList<String>> which contains every word in Harry Potter: The Sorcerer's Stone and a connecting list of all words that follow it. Also contains a MainActivity class for an AndroidStudio app that converts from Miles to Kilometers (and vice versa).
 
 * *Challenge1:* Contains a main file that lists all possible pairs in a randomized array list which sum to 10.
 * *Challenge2:* Contains an addN method in the main file that adds a given integer n to every integer within a string.
