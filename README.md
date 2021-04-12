@@ -22,3 +22,5 @@ Spring 2021 Advanced Topics in Computer Science Turn-in repository.
 * *Challenge2:* Contains an addN method in the main file that adds a given integer n to every integer within a string.
 * *Challenge3:* Contains two recursive methods within the main file: (1) loop, which iterates through each item in a list and adds n and (2) fib, which returns the nth fibonacci number.
 * *Challenge4:* Contains five methods within the main file: (1) minValue, which returns the index of the minimum value in an ArrayList (2) minValue2, which returns the minimum value of two ArrayLists (3) swapTwo, which swaps two values in an ArrayList (4) selectionSort, which is a standard selectionSort method and (5) merge, which merges two ArrayLists and sorts them using selectionSort.
+
+* *MiniAssignment1:* Contains two java files that create an app with two views (and buttons to switch between them) in android studio.
