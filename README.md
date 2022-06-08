@@ -1,5 +1,5 @@
 # **SPA_DataStructures**
-Spring 2021 Advanced Topics in Computer Science Turn-in repository.
+Spring 2021 Advanced Topics in Computer Science Turn-in repository (St. Paul Academy and Summit School).
 
 ## Descriptions:
 * **Assignment1:** Contains a Mouse class with instance variables String name, int xCoordinate, int yCoordinate, and ArrayList<ArrayList<Integer>> coordinateHistoryStack. The mouse can move to different coordinates, and the coordinateHistoryStack contains its full movement history. The mouse also has accessor and movement methods.
